@@ -43,11 +43,9 @@ export function Home() {
   ]
 
   function handleAppointmentDetails(){
-    console.log('Entrou');
     navigation.navigate('AppointmentDetails')
   }
   function handleAppointmentCreate(){
-    console.log('Entrou');
     navigation.navigate('AppointmentCreate')
   }
 
