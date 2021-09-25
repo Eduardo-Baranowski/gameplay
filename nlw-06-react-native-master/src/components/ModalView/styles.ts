@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
-import { theme } from '../../global/styles/theme';
+import { StyleSheet } from "react-native";
+import { theme } from "../../global/styles/theme";
 
 export const styles = StyleSheet.create({
   container: {
@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     marginTop: 100
   },
   overlay: {
-    flex: 1,
+    flex:1,
     backgroundColor: theme.colors.overlay
   },
   bar: {
@@ -17,5 +17,6 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.secondary30,
     alignSelf: 'center',
     marginTop: 13,
+    
   }
 });

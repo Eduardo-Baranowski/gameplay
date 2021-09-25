@@ -1,14 +1,10 @@
-import React, { ReactNode } from 'react';
+import React, {ReactNode} from "react";
+import { Modal, View, ModalProps, TouchableWithoutFeedback } from "react-native";
+import { Background } from "../Background";
+
 import {
-  View,
-  Modal,
-  ModalProps,
-  TouchableWithoutFeedback,
-} from 'react-native';
-
-import { styles } from './styles';
-
-import { Background } from '../Background';
+  styles
+} from './styles';
 
 type Props = ModalProps & {
   children: ReactNode;
@@ -16,7 +12,7 @@ type Props = ModalProps & {
 }
 
 export function ModalView({
-  children, 
+  children,
   closeModal,
   ...rest
 }: Props){
@@ -28,14 +24,14 @@ export function ModalView({
       {...rest}
     >
       <TouchableWithoutFeedback onPress={closeModal}>
-        <View style={styles.overlay}>
-          <View style={styles.container}>
-            <Background>
-              <View style={styles.bar} />
-              {children}
-            </Background>
-          </View>
+      <View style={styles.overlay}>
+        <View style={styles.container}>
+          <Background>
+            <View style={styles.bar} />
+            {children}
+          </Background>
         </View>
+      </View>
       </TouchableWithoutFeedback>
     </Modal>
   );

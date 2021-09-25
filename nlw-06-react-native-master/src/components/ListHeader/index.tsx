@@ -1,26 +1,28 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React from "react";
+import { Image, View, Text } from "react-native";
+import { styles } from "./styles";
+import { theme } from "../../global/styles/theme";
 
-import { styles } from './styles';
 
 type Props = {
   title: string;
   subtitle: string;
 }
 
-export function ListHeader({ 
+export function ListHeader({
   title,
   subtitle
- }: Props) {
-  return (
+}: Props) {
+  
+  return(
     <View style={styles.container}>
       <Text style={styles.title}>
-        { title }
+        {title}
       </Text>
 
       <Text style={styles.subtitle}>
-        { subtitle }
+        {subtitle}
       </Text>
     </View>
-  )
+  );
 }

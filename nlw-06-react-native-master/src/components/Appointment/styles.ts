@@ -1,14 +1,14 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
     width: '100%',
     flexDirection: 'row',
-    alignSelf: 'center',
+    alignSelf: 'center'
   },
   content: {
-    flex: 1,
+    flex: 1
   },
   header: {
     width: '100%',
@@ -30,17 +30,18 @@ export const styles = StyleSheet.create({
   footer: {
     width: '100%',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
   dateInfo: {
     flexDirection: 'row',
     alignItems: 'center',
+
   },
-  playersInfo: {
+  playersInfo : {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'center'
   },
-  date: {
+  date : {
     fontFamily: theme.fonts.text500,
     color: theme.colors.heading,
     fontSize: 13,
@@ -52,12 +53,13 @@ export const styles = StyleSheet.create({
     marginLeft: 7,
     marginRight: 24
   },
-  guildIconContainer: {
-    height: 68,
-    width: 64,
-    borderRadius: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginRight: 20
+  guildIconContainer:{
+      height: 68,
+      width: 64,
+      borderRadius: 8,
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginRight: 20
   }
-});
+
+})

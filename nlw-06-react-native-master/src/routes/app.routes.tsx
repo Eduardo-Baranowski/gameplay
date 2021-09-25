@@ -1,25 +1,25 @@
-import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import React from "react";
+import {createStackNavigator} from '@react-navigation/stack';
 
-import { theme } from '../global/styles/theme';
+import { Home } from "../screens/Home";
+import { AppointmentDetails } from "../screens/AppointmentDetails";
+import { AppointmentCreate } from "../screens/AppointmentCreate";
+import { theme } from "../global/styles/theme";
 
-import { Home } from '../screens/Home';
-import { AppointmentDetails } from '../screens/AppointmentDetails';
-import { AppointmentCreate } from '../screens/AppointmentCreate';
-
-const { Navigator, Screen } = createStackNavigator();
+const {Navigator, Screen} = createStackNavigator();
 
 export function AppRoutes() {
-  return(
-    <Navigator
-      headerMode="none"
+  return (
+    <Navigator      
       screenOptions={{
-        cardStyle: {
+        headerShown: false,
+        cardStyle: {          
           backgroundColor: theme.colors.secondary100
         }
       }}
-    >     
-      <Screen 
+    >
+
+      <Screen
         name="Home"
         component={Home}
       />
@@ -30,7 +30,7 @@ export function AppRoutes() {
       <Screen 
         name="AppointmentCreate"
         component={AppointmentCreate}
-      />      
+      />
     </Navigator>
   )
 }
